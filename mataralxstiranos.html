@@ -12,23 +12,23 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./lib/p5.clickable.js"></script>
 
 </head>
 <body style="font-family: 'VT323', monospace" class="bg-black text-white">
-	
-	<div class="m-10 mx-5 md:mx-20 text-center">
-		<h1 class="my-5 text-3xl">Matar a lxs Tiranos</h1>
-		<p class="text-2xl mb-2">---------------------</p>
-		<img class="m-auto w-50 md:w-1/4" src="./images/portada.jpg" alt="">
-		<p class="m-auto text-2xl mb-5 md:w-1/2">Matar a lxs Tiranos es un webcomic donde los capítulos aparecerán de manera aleatoria uno tras otro, por lo tanto, lo más probable es que al principio el argumento parezca no atender a ninguna lógica.</p>
-		<p class="text-2xl">Guión y dibujo: Sebas Irigoytia</p>
-		<p class="text-2xl">Programación: Nic Motta</p>
+
+	<script src="sketch.js"></script>
+
+    <div class="w-full text-2xl text-center md:text-3xl">
+        <a class="border p-2 hover:bg-gray-600" href="#" onclick="siguiente()">Siguiente</a>
+        <!-- <a class="border p-2 hover:bg-gray-600" href="#" onclick="final()">Ir al final del capítulo</a> -->
+    </div>
+
+	<div class="mt-10 w-full m-auto md:w-1/3">
+	<img id="imagenPrincipal" class="" src="./images/cap_1/c_1_2.gif"  width="100%" alt="">
 	</div>
 
-	<div class="text-3xl mt-5 text-center ">
-		<a class="border p-2 hover:bg-gray-500" href="mataralxstiranos.html">Continuar</a>
-	</div>
-
+	<p class="w-full m-auto text-sm text-center"> Sebas Irigoytia | 2021</p>
 
 </body>
 </html>
